@@ -17,9 +17,9 @@
 		<![endif]-->
 		<noscript>Please enable Javascript!</noscript>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#menubar">
 		<div class="container-fluid">
-			<header-and-links></header-and-links>
+			<header-and-links id="menubar"></header-and-links>
 			<div class="container paddingTop75" id="home">
 				<div class="panel panel-default col-lg-4">
 				  <div class="panel-heading">
@@ -134,8 +134,5 @@
 		<script src="js/angular/mainPage.js"></script>
 		<script src="js/angular/headerAndLinks.js"></script>
 		<script src="js/extras/animations.js"></script>
-		<script>
-			$('body').scrollspy({ target: '#menubar' });
-		</script>
 	</body>
 </html>
