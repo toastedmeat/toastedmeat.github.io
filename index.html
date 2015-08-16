@@ -17,7 +17,7 @@
 		<![endif]-->
 		<noscript>Please enable Javascript!</noscript>
 	</head>
-	<body data-spy="scroll" data-target="#menubar">
+	<body>
 		<div class="container-fluid">
 			<header-and-links></header-and-links>
 			<div class="container paddingTop75" id="home">
@@ -135,9 +135,7 @@
 		<script src="js/angular/headerAndLinks.js"></script>
 		<script src="js/extras/animations.js"></script>
 		<script>
-			$('[data-spy="scroll"]').each(function () {
-			  var $spy = $(this).scrollspy('refresh')
-			})
+			$('body').scrollspy({ target: '#menubar' });
 		</script>
 	</body>
 </html>
