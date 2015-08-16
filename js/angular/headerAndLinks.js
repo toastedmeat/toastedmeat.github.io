@@ -4,7 +4,11 @@
 	app.directive('headerAndLinks', function(){
 		return {
 			restrict:'E',
-			templateUrl:'directives/header.html'
+			templateUrl:'directives/header.html',
+			controller: function(){
+				
+			},
+			controllerAs: 'head'
 		};
 	});
 	
